@@ -18,7 +18,7 @@ if (platform === 'darwin' && arch !== 'x64') {
 
 var ffmpegPath = path.join(
   'node_modules',
-  'ffmpeg-static',
+  'ffmpeg-static-electron-react',
   'bin',
   platform,
   arch,
