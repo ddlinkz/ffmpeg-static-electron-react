@@ -36,7 +36,7 @@ echo '  extracting'
 $tar_exec -x -C ../bin/linux/ia32 --strip-components 1 -f linux-ia32.tar.xz --wildcards '*/ffmpeg'
 
 # find latest version
-LATEST_OSX=$(curl -s https://evermeet.cx/pub/ffmpeg/ | grep ffmpeg | grep .7z | head -1 | cut -d'"' -f 2)
+LATEST_OSX=$(curl -s https://evermeet.cx/pub/ffmpeg/ | grep ffmpeg | cut -d'"' -f 2| grep '.\.7z$' | head -1)
 
 echo 'darwin x64'
 echo '  downloading from evermeet.cx'
