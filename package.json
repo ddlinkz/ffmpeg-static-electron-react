@@ -1,0 +1,24 @@
+{
+  "name": "ffmpeg-static-electron-react",
+  "version": "1.0.0",
+  "description": "ffmpeg-static for use in an Electron + React based project",
+  "main": "index.js",
+  "author": {
+    "name": "Austin Brown",
+    "email": "ddlinkab@gmail.com"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "~2.3.2"
+  },
+  "files": [
+    "index.js",
+    "bin"
+  ],
+    "scripts": {
+    "build": "./build/index.sh",
+    "prepublishOnly": "npm run build && npm test",
+    "test": "tape test/*.js"
+  }
+}
