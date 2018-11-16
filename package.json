@@ -19,6 +19,7 @@
     "scripts": {
     "build": "./build/index.sh",
     "prepublishOnly": "npm run build && npm test",
+    "publish": "npm publish",
     "test": "tape test/*.js"
   }
 }
