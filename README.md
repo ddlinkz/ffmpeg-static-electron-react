@@ -13,7 +13,7 @@ Supports macOS (64-bit), Linux (32 and 64-bit) and Windows (32 and 64-bit). The 
 This module is installed via npm:
 
 ``` bash
-$ npm install ffmpeg-static
+$ npm install ffmpeg-static-electron-react
 ```
 
 ## Example Usage
@@ -28,7 +28,7 @@ console.log(ffmpeg.path);
 
 ## Sources of the binaries
 
-[The build script](build/index.sh) downloads binaries from these locations:
+[The build script](https://github.com/ddlinkz/ffmpeg-static-electron-react/blob/master/build/index.sh) downloads binaries from these locations:
 
 - [Windows builds](https://ffmpeg.zeranoe.com/builds/win64/static/)
 - [Linux builds](https://johnvansickle.com/ffmpeg/)
@@ -36,4 +36,8 @@ console.log(ffmpeg.path);
 
 ## Building the project
 
-The `unzip`, `tar` and `7zr` CLI executables need to be installed. On macOS, use `brew install p7zip gnu-tar`.
+The `unzip`, `tar` and `7zr` CLI executables need to be installed. On macOS, use `brew install p7zip gnu-tar`. You must copy the build script into a `build/index.sh` file then at the base of the repository, run:
+
+``` bash
+$ npm run-script build
+```
