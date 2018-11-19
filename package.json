@@ -1,6 +1,6 @@
 {
   "name": "ffmpeg-static-electron-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ffmpeg-static for use in an Electron + React based project",
   "main": "index.js",
   "author": {
